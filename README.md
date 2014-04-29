@@ -18,7 +18,7 @@ On [Hackage](http://hackage.haskell.org/package/float-cast): `cabal install floa
 Fast casting
 ------------
 
-The way implemented in this package is the fastest possible way known as of now.
+The way implemented in this package is the fastest possible way known as of now. In particular, it is faster than what [`data-binary-ieee754`](https://hackage.haskell.org/package/data-binary-ieee754) does at the moment.
 
 For a discussion, see [this StackOverflow](http://stackoverflow.com/questions/6976684/converting-ieee-754-floating-point-in-haskell-word32-64-to-and-from-haskell-floa) question.
 
