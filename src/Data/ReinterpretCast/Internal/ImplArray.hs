@@ -17,24 +17,28 @@ import Data.Array.Unsafe (castSTUArray)
 import GHC.ST (runST, ST)
 
 
-{-# INLINEABLE wordToFloat #-}
 wordToFloat :: Word32 -> Float
 wordToFloat x = runST (cast x)
 
+{-# INLINEABLE wordToFloat #-}
 
-{-# INLINEABLE floatToWord #-}
+
 floatToWord :: Float -> Word32
 floatToWord x = runST (cast x)
 
+{-# INLINEABLE floatToWord #-}
 
-{-# INLINEABLE wordToDouble #-}
+
 wordToDouble :: Word64 -> Double
 wordToDouble x = runST (cast x)
 
+{-# INLINEABLE wordToDouble #-}
 
-{-# INLINEABLE doubleToWord #-}
+
 doubleToWord :: Double -> Word64
 doubleToWord x = runST (cast x)
+
+{-# INLINEABLE doubleToWord #-}
 
 
 {-# INLINE cast #-}

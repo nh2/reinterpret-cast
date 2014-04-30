@@ -13,35 +13,41 @@ import qualified Foreign as F
 import           System.IO.Unsafe (unsafePerformIO)
 
 
-{-# INLINABLE floatToWord #-}
 floatToWord :: Float -> F.Word32
 floatToWord = fromFloat
 
+{-# INLINABLE floatToWord #-}
 
-{-# INLINABLE wordToFloat #-}
+
 wordToFloat :: F.Word32 -> Float
 wordToFloat = toFloat
 
+{-# INLINABLE wordToFloat #-}
 
-{-# INLINABLE doubleToWord #-}
+
 doubleToWord :: Double -> F.Word64
 doubleToWord = fromFloat
 
+{-# INLINABLE doubleToWord #-}
 
-{-# INLINABLE wordToDouble #-}
+
 wordToDouble :: F.Word64 -> Double
 wordToDouble = toFloat
 
+{-# INLINABLE wordToDouble #-}
 
-{-# INLINE toFloat #-}
+
 toFloat :: (F.Storable word, F.Storable float) => word -> float
 toFloat word = unsafePerformIO $ F.alloca $ \buf -> do
   F.poke (F.castPtr buf) word
   F.peek buf
 
+{-# INLINE toFloat #-}
 
-{-# INLINE fromFloat #-}
+
 fromFloat :: (F.Storable word, F.Storable float) => float -> word
 fromFloat float = unsafePerformIO $ F.alloca $ \buf -> do
   F.poke (F.castPtr buf) float
   F.peek buf
+
+{-# INLINE fromFloat #-}
