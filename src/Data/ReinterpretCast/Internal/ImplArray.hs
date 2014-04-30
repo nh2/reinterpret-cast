@@ -4,7 +4,7 @@
 --
 -- Implements casting via a 1-elemnt STUArray, as described in
 -- <http://stackoverflow.com/a/7002812/263061>.
-module Data.FloatCast.Internal.ImplArray
+module Data.ReinterpretCast.Internal.ImplArray
   ( wordToFloat
   , floatToWord
   , wordToDouble

@@ -2,9 +2,9 @@ module Main (main) where
 
 import           Criterion.Main
 
-import qualified Data.FloatCast as Current
-import qualified Data.FloatCast.Internal.ImplArray as FC
-import qualified Data.FloatCast.Internal.ImplFFI as FFI
+import qualified Data.ReinterpretCast as Current
+import qualified Data.ReinterpretCast.Internal.ImplArray as FC
+import qualified Data.ReinterpretCast.Internal.ImplFFI as FFI
 -- Keep comparing against the data-binary-ieee754 package in case that changes.
 import qualified Data.Binary.IEEE754 as IEEE
 

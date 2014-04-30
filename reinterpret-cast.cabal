@@ -1,4 +1,4 @@
-name:          float-cast
+name:          reinterpret-cast
 version:       0.1.0
 license:       MIT
 copyright:     2014 Niklas Hambüchen <mail@nh2.me>
@@ -9,27 +9,27 @@ build-type:    Simple
 stability:     experimental
 tested-with:   GHC==7.6.3
 cabal-version: >= 1.8
-homepage:      https://github.com/nh2/float-cast
-bug-reports:   https://github.com/nh2/float-cast/issues
+homepage:      https://github.com/nh2/reinterpret-cast
+bug-reports:   https://github.com/nh2/reinterpret-cast/issues
 synopsis:      Memory reinterpretation casts for Float/Double and Word32/Word64
 description:
   Memory reinterpretation casts for Float/Double and Word32/Word64.
   .
-  The implementations in the `.Internal` package are different ways to tackle
-  the problem; the 'array' method (current default) is about 5 times faster
-  than the 'FFI' method.
+  The implementations in the @.Internal@ package are different ways to tackle
+  the problem; the @array@ method (current default) is about 5 times faster
+  than the @FFI@ method.
 
 source-repository head
   type:      git
-  location:  git://github.com/nh2/float-cast.git
+  location:  git://github.com/nh2/reinterpret-cast.git
 
 
 library
   exposed-modules:
-    Data.FloatCast
+    Data.ReinterpretCast
     -- Internal
-    Data.FloatCast.Internal.ImplArray
-    Data.FloatCast.Internal.ImplFFI
+    Data.ReinterpretCast.Internal.ImplArray
+    Data.ReinterpretCast.Internal.ImplFFI
   hs-source-dirs:
     src
   build-depends:
@@ -50,7 +50,7 @@ test-suite tests
     Main.hs
   build-depends:
       base                >= 4 && < 5
-    , float-cast
+    , reinterpret-cast
     , data-binary-ieee754 >= 0.4.4
     , loop                >= 0.2.0
     , hspec               >= 1.3.0.1
@@ -66,7 +66,7 @@ benchmark bench
     Bench.hs
   build-depends:
       base                >= 4 && < 5
-    , float-cast
+    , reinterpret-cast
     , criterion           >= 0.6.0.0
     , data-binary-ieee754 >= 0.4.4
   ghc-options:
