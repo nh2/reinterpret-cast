@@ -1,6 +1,8 @@
 reinterpret-cast
 ================
 
+[![Build Status](https://travis-ci.org/nh2/reinterpret-cast.png)](https://travis-ci.org/nh2/reinterpret-cast)
+
 Memory reinterpretation casts for Float/Double and Word32/Word64 in Haskell.
 
 Takes the bit representation of a number and uses it for a different numeric type.
