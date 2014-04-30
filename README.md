@@ -33,3 +33,11 @@ Benchmark results for `bench/Bench.hs` are [available here](https://rawgit.com/n
 In theory, these should all be no-ops, but you [must not use `unsafeCoerce`](https://ghc.haskell.org/trac/ghc/ticket/4092) or even `unsafeCoerce#` for this.
 
 The real solution will be [this GHC feature request](https://ghc.haskell.org/trac/ghc/ticket/4092) - please support it.
+
+
+TODO
+----
+
+* Compare to the performance of an `unsafe` pure FFI call that does `float f = 1.23; int i = * (int *) &f;` inside.
+
+Contributions welcome!
