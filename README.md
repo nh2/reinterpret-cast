@@ -9,10 +9,10 @@ This is `reinterpret_cast` from C++ and `float f = 1.23; int i = * (int *) &f;` 
 We offer you fast casts for:
 
 ```haskell
-wordToFloat  :: Word32 -> Float
 floatToWord  :: Float  -> Word32
-wordToDouble :: Word64 -> Double
+wordToFloat  :: Word32 -> Float
 doubleToWord :: Double -> Word64
+wordToDouble :: Word64 -> Double
 ```
 
 If you need something like `Int32` or similar, `fromIntegral` will do the job

@@ -3,10 +3,10 @@
 -- Implements casting via the FFI, using `alloca` like in
 -- <http://hackage.haskell.org/package/data-binary-ieee754>.
 module Data.ReinterpretCast.Internal.ImplFFI
-  ( wordToFloat
-  , floatToWord
-  , wordToDouble
+  ( floatToWord
+  , wordToFloat
   , doubleToWord
+  , wordToDouble
   ) where
 
 import qualified Foreign as F

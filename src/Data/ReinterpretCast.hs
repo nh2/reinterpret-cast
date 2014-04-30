@@ -5,10 +5,10 @@
 -- If you need something like `Int32` or similar, `fromIntegral` will do the job
 -- within the integral types (so to/from @Word*@ are the only conversions needed).
 module Data.ReinterpretCast
-  ( Impl.wordToFloat
-  , Impl.floatToWord
-  , Impl.wordToDouble
+  ( Impl.floatToWord
+  , Impl.wordToFloat
   , Impl.doubleToWord
+  , Impl.wordToDouble
   ) where
 
 import qualified Data.ReinterpretCast.Internal.ImplArray as Impl
