@@ -13,7 +13,7 @@ homepage:      https://github.com/nh2/reinterpret-cast
 bug-reports:   https://github.com/nh2/reinterpret-cast/issues
 synopsis:      Memory reinterpretation casts for Float/Double and Word32/Word64
 description:
-  Memory reinterpretation casts for Float/Double and Word32/Word64.
+  Memory reinterpretation casts for Float\/Double and Word32\/Word64.
   .
   The implementations in the @.Internal@ package are different ways to tackle
   the problem; the @array@ method (current default) is about 5 times faster
