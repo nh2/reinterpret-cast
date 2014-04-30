@@ -15,6 +15,9 @@ wordToDouble :: Word64 -> Double
 doubleToWord :: Double -> Word64
 ```
 
+If you need something like `Int32` or similar, `fromIntegral` will do the job
+within the integral types (so to/from `Word*` are the only conversions needed).
+
 On [Hackage](http://hackage.haskell.org/package/float-cast): `cabal install float-cast`
 
 
