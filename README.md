@@ -1,9 +1,12 @@
 float-cast
 ==========
 
-Converts between Float/Double and Word32/Word64 in Haskell.
+Memory reinterpretation casts for Float/Double and Word32/Word64 in Haskell.
 
-This provides you with 4 fast casts:
+Takes the bit representation of a number and uses it for a different numeric type.
+This is `reinterpret_cast` from C++ and `float f = 1.23; int i = * (int *) &f;` from C.
+
+We offer you fast casts for:
 
 ```haskell
 wordToFloat  :: Word32 -> Float
