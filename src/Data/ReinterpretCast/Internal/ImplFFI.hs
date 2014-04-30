@@ -13,24 +13,28 @@ import qualified Foreign as F
 import           System.IO.Unsafe (unsafePerformIO)
 
 
+-- | Reinterpret-casts a `Float` to a `F.Word32`.
 floatToWord :: Float -> F.Word32
 floatToWord = fromFloat
 
 {-# INLINABLE floatToWord #-}
 
 
+-- | Reinterpret-casts a `F.Word32` to a `Float`.
 wordToFloat :: F.Word32 -> Float
 wordToFloat = toFloat
 
 {-# INLINABLE wordToFloat #-}
 
 
+-- | Reinterpret-casts a `Double` to a `F.Word64`.
 doubleToWord :: Double -> F.Word64
 doubleToWord = fromFloat
 
 {-# INLINABLE doubleToWord #-}
 
 
+-- | Reinterpret-casts a `F.Word64` to a `Double`.
 wordToDouble :: F.Word64 -> Double
 wordToDouble = toFloat
 
