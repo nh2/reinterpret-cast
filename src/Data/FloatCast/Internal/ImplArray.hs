@@ -3,7 +3,7 @@
 -- | This is the 'array' approach.
 --
 -- Implements casting via a 1-elemnt STUArray, as described in
--- http://stackoverflow.com/a/7002812/263061.
+-- <http://stackoverflow.com/a/7002812/263061>.
 module Data.FloatCast.Internal.ImplArray
   ( wordToFloat
   , floatToWord

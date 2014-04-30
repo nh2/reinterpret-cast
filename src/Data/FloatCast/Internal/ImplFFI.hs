@@ -1,7 +1,7 @@
 -- | This is the 'FFI' approach.
 --
 -- Implements casting via the FFI, using `alloca` like in
--- http://hackage.haskell.org/package/data-binary-ieee754.
+-- <http://hackage.haskell.org/package/data-binary-ieee754>.
 module Data.FloatCast.Internal.ImplFFI
   ( wordToFloat
   , floatToWord
